@@ -1,0 +1,29 @@
+{
+  "name": "bot",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cls && eslint . --ext .ts --fix && tsx --no-warnings ./src/index.ts",
+    "test": "cls && tsx --no-warnings ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0",
+    "tsx": "^3.12.8",
+    "typescript": "^5.2.2",
+    "typescript-eslint-language-service": "^5.0.5"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.6.5",
+    "@discordjs/collection": "^1.5.3",
+    "@discordjs/rest": "^2.0.1",
+    "@types/js-yaml": "^4.0.6",
+    "consola": "^3.2.3",
+    "discord-api-types": "^0.37.60",
+    "dotenv": "^16.3.1",
+    "eris": "^0.17.2",
+    "js-yaml": "^4.1.0"
+  }
+}

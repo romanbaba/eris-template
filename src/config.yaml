@@ -1,0 +1,8 @@
+token: ''
+id: ''
+restOffset: 0
+largeThreshold: 250
+intents:
+  - 'guilds'
+developers:
+ - ''
