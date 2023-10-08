@@ -125,7 +125,7 @@ export class Bot extends Client {
 			consola.success(`The "${file.name}" command has been successfully saved to memory.`);
 		}
 
-		await rest.put(Routes.applicationCommands(process.env['ID'] ?? ''), {
+		await rest.put(Routes.applicationCommands(this.config.id), {
 			body: this.commands.map((command) => command.slashCommandBuilder),
 		});
 		consola.info(`"${this.commands.size}" command was successfully updated by Discord API.`);
